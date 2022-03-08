@@ -14,6 +14,6 @@ pkg install bs4
 
 git clone https://github.com/Shuvo-BBHH/prow
 
-cd preow
+cd prow
 
 python2 MAHDI.py
